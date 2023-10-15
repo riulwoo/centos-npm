@@ -10,6 +10,7 @@ __DIR__=`dirname $__FILE__`
 
 #centos의 selinux 끄기
 sed -i 's/enforcing/disabled/' /etc/sysconfig/selinux
+setenforce 0
 
 # 기본 패키지 설치
 yum update -y
