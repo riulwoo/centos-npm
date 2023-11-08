@@ -260,7 +260,7 @@ mysql -e "grant all privileges on mes_gara.* to 'mes'@'localhost'";
 mysql -e "flush privileges";
 
 # 아파치 설치 및 세팅
-yum insatll -y httpd
+yum install -y httpd
 cat << EOF > /etc/httpd/conf/httpd.conf
 ServerRoot "/etc/httpd"
 
